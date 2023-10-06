@@ -105,12 +105,12 @@ char *ft_strcpy(char *dest, char *src);
 	
 int main(void)
 {
-	char hero[] = "pacman";
 	char villian [] = "frogger";
+	int i = sizeof villian;
+	char hero[i];
 
 	ft_strcpy(hero, villian);
 	printf("%s\n", hero);
 	return 0;
 }
-
 // ====================================second======================================================

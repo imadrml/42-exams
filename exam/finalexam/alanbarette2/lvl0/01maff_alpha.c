@@ -44,31 +44,31 @@ int main(void)
 // }
 
 // ======================================****3*****=========================================
-// #include <unistd.h>
+#include <unistd.h>
 
-// void ft_putchar(char c)
-// {
-//     write(1, &c, 1);
-// }
+void ft_putchar(char c)
+{
+    write(1, &c, 1);
+}
 
-// void maff_alpha(void)
-// {
-//     char even = 'B';
-//     char odd = 'a';
+void maff_alpha(void)
+{
+    char even = 'B';
+    char odd = 'a';
 
-//     while(even <= 'Z' && odd <= 'y')
-//     {
-//         ft_putchar(odd);
-//         ft_putchar(even);
-//         odd += 2;
-//         even += 2;
-//     }
-//     ft_putchar('\n');
-// }
+    while(even <= 'Z' && odd <= 'y')
+    {
+        ft_putchar(odd);
+        ft_putchar(even);
+        odd += 2;
+        even += 2;
+    }
+    ft_putchar('\n');
+}
 
 
-// int main(void)
-// {
-//     maff_alpha();
-//     return(0);
-// }
+int main(void)
+{
+    maff_alpha();
+    return(0);
+}
